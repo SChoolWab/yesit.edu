@@ -25,17 +25,23 @@ dt.innerHTML = DateFull
 let MenuBtn = document.querySelector('.mobileMenu')
 let close = document.querySelector('.close')
 let MenuOpt = document.querySelector('#mobileMenuOption')
+let body = document.querySelector('body');
 let check = true;
 
 MenuBtn.addEventListener('click', () => {
     if (check == true) {
-        document.querySelector('body').style.marginLeft = '50%';
-        MenuOpt.style.display = 'block';
+        body.classList.add('ForMobile')
+        MenuOpt.classList.add('menuActive')
+        MenuOpt.style.display = 'block'
         check = false
     } else {
             
-        document.querySelector('body').style.marginLeft = '0%';
-        MenuOpt.style.display = 'none';
+        body.classList.remove('ForMobile')
+        MenuOpt.classList.remove('menuActive')
+
+        setTimeout(() => {
+            MenuOpt.style.display = 'none'
+        },500)
         check = true
     }
 
@@ -45,16 +51,20 @@ MenuBtn.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
     if (check == true) {
-        document.querySelector('body').style.marginLeft = '50%';
-        MenuOpt.style.display = 'block';
+        body.classList.add('ForMobile')
+        MenuOpt.classList.add('menuActive')
+        MenuOpt.style.display = 'block'
         check = false
     } else {
 
-        document.querySelector('body').style.marginLeft = '0%';
-        MenuOpt.style.display = 'none';
+        body.classList.remove('ForMobile')
+        MenuOpt.classList.remove('menuActive')
+
+        setTimeout(() => {
+            MenuOpt.style.display = 'none'
+        }, 500)
         check = true
     }
-
 
 })
 
