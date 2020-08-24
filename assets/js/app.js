@@ -71,3 +71,4 @@ close.addEventListener('click', () => {
 
 
 
+var mixer = mixitup('.mixuer')

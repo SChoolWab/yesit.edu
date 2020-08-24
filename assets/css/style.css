@@ -2,14 +2,16 @@
     --pri: #219653;
     --Dark90: #333333;
     --Light10: #BDBDBD;
+    --LightBg: #E3E6EC;
     --sec: #EB5757;
     --navBg: #6FCF97;
+    --dataBG: #2F80ED;
 }
 
 
 body {
     position: relative;
-    left:0;
+    left: 0;
     overflow-x: hidden;
     animation: bodyClose .5s linear 1;
 }
@@ -21,7 +23,7 @@ body {
     }
 
     100% {
-        left:0%;
+        left: 0%;
     }
 
 }
@@ -44,6 +46,15 @@ body.ForMobile {
 
 }
 
+
+
+
+
+
+
+button:focus{
+    outline: none;
+}
 
 #topMenu {
     color: #fff;
@@ -256,6 +267,136 @@ body.ForMobile {
 
 }
 
+
+
+
+
+
+
+/***********************
+main section work
+***********************/
+
+.mojib {
+    height: 320px;
+    border: .3rem solid var(--pri);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    overflow: hidden;
+}
+
+.mojib img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
+
+.mojib .mojib_text {
+    background: var(--pri);
+    padding: .5rem 0;
+    color: #fff;
+    text-align: center;
+
+}
+
+
+
+
+
+/* notice  */
+
+
+.notice {
+    border: .3rem solid var(--pri);
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    overflow: hidden;
+}
+
+
+.notice_title {
+    background: var(--pri);
+    color: white;
+    text-align: center;
+    padding: .3rem 0;
+}
+
+.sortArea {
+    display: flex;
+    justify-content: space-around;
+    margin: .3rem .3rem;
+}
+
+.sortArea button:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: var(--sec);
+}
+
+.sortArea button {
+    border: none;
+    border-radius: 1rem;
+    background: var(--navBg);
+    padding: .05rem .6rem;
+}
+
+.notice_all {
+    display: table;
+    background: var(--LightBg);
+}
+
+.sortArea button:nth-child(2) {
+    background: orange;
+}
+
+.notice_content div {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @keyframes menuclose {
 
     0% {
@@ -370,6 +511,89 @@ div#banner {
 
 
 
+.notice_content {
+    display: flex;
+    background: white;
+    border: 1rem;
+    border-radius: 1rem;
+    margin: .3rem;
+    padding: .3rem;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 79px;
+}
+
+
+
+
+
+.notice_date {
+    width: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notice_text {
+    width: 74%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .1rem .3rem;
+}
+
+.notice_downlaod {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.circle_date {
+    width: 45px;
+    height: 45px;
+    background: var(--dataBG);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.circle_date span:nth-child(1) {
+    color: white;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.circle_date span:nth-child(2) {
+    color: white;
+    font-size: .7rem;
+    text-align: center;
+    line-height: .2rem;
+}
+
+
+.AllNotice {
+    max-height: 318px;
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* responsive  */
 
@@ -401,6 +625,36 @@ div#banner {
     }
 
 }
+
+
+
+
+
+.notice_downloadBtn {
+    width: 30px;
+    height: 30px;
+    background: var(--Light10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.notice_text p {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
