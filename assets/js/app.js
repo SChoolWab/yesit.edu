@@ -1,6 +1,5 @@
 $().ready(function () {
     $('.slick-carousel').slick({
-        arrows: true,
         centerPadding: "0px",
         infinite: true,
         slidesToShow: 1,
